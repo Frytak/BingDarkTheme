@@ -29,12 +29,11 @@ MAIN PAGE
 
 /* Background */
 body,
-body > div.hpapp,
-body > div.hpapp > div > div:nth-child(1) > div.hp_media_container > div,
-body > div.hpapp > div,
-body > div.hpapp > div > div.hpl.hp_cont,
-body > div.hpapp > div > div:nth-child(5) > div,
-body > div.hpapp > div > div:nth-child(1) > div.hp_top_cover_container_tall > div {
+body > div,
+body > div > div,
+body > div > div > div,
+body > div > div > div > div,
+body > div > div > div > div > div {
 	background-color: var(--depth1) !important;
 }
 
@@ -54,7 +53,7 @@ body > div.hpapp > div > div:nth-child(1) > div.hp_top_cover_container_tall > di
 }
 
 /* SearchBar Suggestion Box Previously Searched */
-#sa_ul > li > div.sa_tm.sa_tmHS > span > strong {
+#sa_ul > li > div > span > strong {
 	font-weight: bold;
 	color: var(--accent1) !important;
 }
@@ -79,21 +78,21 @@ body > div.hpapp > div > div:nth-child(1) > div.hp_top_cover_container_tall > di
 }
 
 /* Introducing the new Bing Box */
-#sb_form > div.below_sbox > div > div {
+#sb_form > div > div > div {
 	background-color: var(--depth2) !important;
 }
 
-#sb_form > div.below_sbox > div > div > div > div.cdxMain > div.cdxNudgeCard > div.cdxIntroText {
+#sb_form > div > div > div > div > div > div > div {
 	color: var(--font-color) !important;
 }
 
 .cdxTitle,
-#sb_form > div.below_sbox > div > div > div > div.cdxButtonTray > a,
-#sb_form > div.below_sbox > div > div > div > div.cdxButtonTray > a.cdxButton.cdxAltButton {
+#sb_form > div > div > div > div > div > a,
+#sb_form > div > div > div > div > div > a {
 	color: var(--font-color) !important;
 }
 
-#sb_form > div.below_sbox > div > div > div > div.cdxButtonTray > a.cdxButton.cdxAltButton {
+#sb_form > div > div > div > div > div > a {
 	background-color: var(--transparent) !important;
 	background: none;
 }

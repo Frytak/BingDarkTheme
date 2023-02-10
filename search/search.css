@@ -114,3 +114,64 @@ body > div.hpapp > div > div:nth-child(1) > div.hp_top_cover_container_tall > di
 #b_context > li > div > div > div > div > h2 {
 	color: var(--font-color) !important;
 }
+
+#c0 {
+	background-color: var(--depth2) !important;
+	border-color: var(--depth4) !important;
+	color: var(--font-color) !important;
+}
+
+#b_algospacing > div > a {
+	color: var(--font-color) !important;
+}
+
+#b_algospacing > ul > li {
+	border-color: var(--depth4) !important;
+}
+
+#b_algospacing > ul > li > a {
+	color: var(--accent1) !important;
+}
+
+#b_results > li.b_algo.b_vtl_deeplinks > form > span > input[type='submit'] {
+	background-color: var(--accent1) !important;
+	border-color: var(--accent1) !important;
+}
+
+#brsv3 > h2 {
+	color: var(--accent1) !important;
+}
+
+#ans_nws > div div div div div div div div div div div div,
+.na_cl.lc .na_citem {
+	color: var(--font-color) !important;
+	background-color: var(--depth3) !important;
+}
+
+.big_logo_left_gradient,
+.big_logo_right_gradient {
+	background: none !important;
+}
+
+#ans_nws > div > div > div {
+	border-color: var(--depth4) !important;
+}
+
+#brsv3 > ul > li a {
+	background-color: var(--depth3) !important;
+}
+
+#brsv3 > ul > li > a > div {
+	color: var(--accent1) !important;
+}
+
+#b_footer {
+	background-color: var(--depth2) !important;
+}
+
+/* IT DOESN'T WORK! WTF CSS */
+
+/* #b_results > li > nav > ul > li > a:hover,
+#b_results > .b_pag a:hover {
+	background-color: var(--depth3) !important;
+} */
