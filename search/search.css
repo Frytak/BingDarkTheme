@@ -1,0 +1,116 @@
+/**
+ * ================================
+ * SEARCH RESULTS
+ * ================================
+ *
+ * @format
+ */
+
+:root {
+	--depth1: #2e2e2e;
+	--depth2: #303030;
+	--depth3: #3b3b3b;
+	--depth4: #444444;
+
+	--accent1: #8dd5ff;
+	--accent2: #ff8d8d;
+
+	--transparent: rgba(0, 0, 0, 0);
+
+	--font-color: #ffffff;
+}
+
+* {
+	color: var(--font-color);
+}
+
+a {
+	color: var(--accent1) !important;
+}
+
+/* Background */
+body,
+body > div.hpapp,
+body > div.hpapp > div > div:nth-child(1) > div.hp_media_container > div,
+body > div.hpapp > div,
+body > div.hpapp > div > div.hpl.hp_cont,
+body > div.hpapp > div > div:nth-child(5) > div,
+body > div.hpapp > div > div:nth-child(1) > div.hp_top_cover_container_tall > div {
+	background-color: var(--depth1) !important;
+}
+
+#sb_form > div {
+	background-color: var(--depth2) !important;
+}
+
+#sw_as > div,
+#sw_as > div > div.sa_drw {
+	background-color: var(--depth3) !important;
+}
+
+#b_header {
+	border-color: var(--depth3) !important;
+}
+
+#sa_ans > div > div > div.b_vPanel > div > div > * {
+	color: var(--accent1) !important;
+}
+
+#sa_ul > li {
+	background-color: var(--depth3) !important;
+}
+
+#sa_ul > li:hover {
+	background-color: var(--depth4) !important;
+}
+
+#sa_ans > div > div > div.b_vPanel > div > span,
+#sa_ul > li > div > span > *,
+#sw_as > div > div.sa_drw > p,
+#sa_ul > li > div > div > * {
+	color: var(--font-color) !important;
+}
+
+#as_foot {
+	background-color: var(--depth3) !important;
+}
+
+#b_header > nav > ul > li > a {
+	color: var(--font-color) !important;
+}
+
+#b_results > li,
+#b_context > li,
+#b_context > li > div {
+	background-color: var(--transparent) !important;
+}
+
+#b_results > li > div > div > cite,
+#b_results > li > div > div > div > cite {
+	color: var(--accent2) !important;
+}
+
+#b_context > li > div > div > div > h2,
+#b_context > li > div > div > div > ul > li > div {
+	color: var(--font-color) !important;
+}
+
+#b_context > li > div > div > div {
+	border-color: var(--depth3) !important;
+}
+
+#b_context > li > div {
+	box-shadow: none !important;
+	border-color: var(--depth4) !important;
+}
+
+#b_context > li > div > div > div > div > div > div,
+#b_context > li > div > div > div > div > div > ul > li,
+#b_context > li > div > div > div > div {
+	border-color: var(--depth4) !important;
+}
+
+#wire2 > div,
+#b_context > li > div > div > div > div > h2 {
+	color: var(--font-color) !important;
+}

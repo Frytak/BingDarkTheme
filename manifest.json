@@ -1,0 +1,23 @@
+{
+	"manifest_version": 3,
+	"name": "Bing Dark Theme",
+	"version": "1.0",
+	"description": "Dark Theme for Bing",
+	"icons": {
+		"32": "icons/bad_dragon32x32.png"
+	},
+	"content_scripts": [
+		{
+			"js": ["./main/main.js"],
+			"css": ["./main/main.css"],
+			"matches": ["https://www.bing.com/", "https://www.bing.com/?FORM=Z9FD1"],
+			"run_at": "document_end"
+		},
+		{
+			"js": ["./search/search.js"],
+			"css": ["./search/search.css"],
+			"matches": ["https://www.bing.com/search*"],
+			"run_at": "document_end"
+		}
+	]
+}
