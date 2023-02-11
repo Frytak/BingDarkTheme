@@ -169,9 +169,58 @@ body > div.hpapp > div > div:nth-child(1) > div.hp_top_cover_container_tall > di
 	background-color: var(--depth2) !important;
 }
 
-/* IT DOESN'T WORK! WTF CSS */
-
-/* #b_results > li > nav > ul > li > a:hover,
+#b_results > li > nav > ul > li > a:hover,
 #b_results > .b_pag a:hover {
 	background-color: var(--depth3) !important;
-} */
+}
+
+html {
+	min-height: 100% !important;
+	background-color: var(--depth1) !important;
+}
+
+#b_context > li > div > h2 {
+	color: var(--font-color) !important;
+	border-color: var(--depth4) !important;
+}
+
+#b_context > li > div > ul > li {
+	border-color: var(--depth4) !important;
+}
+
+#b_context > li > div > ul > li > a:hover {
+	background-color: var(--depth3) !important;
+}
+
+#b_results > li > div > div > div > div > div > div > ul > li {
+	color: var(--font-color) !important;
+	background-color: var(--depth3) !important;
+}
+
+#b_results > li > div > div > div > div > div {
+	border-color: var(--depth4) !important;
+}
+
+#b_results > li > div > div > div > div > div > div > ul > li:hover {
+	box-shadow: inset 0 -3px 0 0 var(--accent2) !important;
+}
+
+.tab-navl,
+.tab-navr {
+	background-color: var(--depth3) !important;
+}
+
+.tab-navl > svg,
+.tab-navr > svg {
+	fill: var(--font-color) !important;
+}
+
+.tab-active {
+	box-shadow: inset 0 -3px 0 0 var(--accent1) !important;
+}
+
+#sa_ul > li,
+#sa_ul {
+	background-color: var(--depth3) !important;
+	color: var(--font-color) !important;
+}

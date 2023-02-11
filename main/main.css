@@ -78,7 +78,8 @@ body > div > div > div > div > div {
 }
 
 /* Introducing the new Bing Box */
-#sb_form > div > div > div {
+
+#sb_form > div.below_sbox > div > div > div {
 	background-color: var(--depth2) !important;
 }
 
@@ -151,4 +152,12 @@ body > div > div > div > div > div {
 
 #HBContent > div:nth-child(7) > div:nth-child(2) > div > span::after {
 	content: ' and a faggot Hyena';
+}
+
+#sa_ans > div > div > div > div > div > * {
+	color: var(--accent1) !important;
+}
+
+#sa_ans > div > div > div > div > span {
+	color: var(--font-color) !important;
 }
