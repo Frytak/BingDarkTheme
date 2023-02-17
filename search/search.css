@@ -7,220 +7,318 @@
  */
 
 :root {
-	--depth1: #2e2e2e;
-	--depth2: #303030;
-	--depth3: #3b3b3b;
-	--depth4: #444444;
+	--depth1: #2a2c2a;
+	--depth2: #323636;
+	--depth3: #3a4042;
+	--depth4: #434a4d;
 
-	--accent1: #8dd5ff;
+	--accent1: #518cae;
 	--accent2: #ff8d8d;
 
 	--transparent: rgba(0, 0, 0, 0);
 
 	--font-color: #ffffff;
-}
-
-* {
-	color: var(--font-color);
-}
-
-a {
-	color: var(--accent1) !important;
-}
-
-/* Background */
-body,
-body > div.hpapp,
-body > div.hpapp > div > div:nth-child(1) > div.hp_media_container > div,
-body > div.hpapp > div,
-body > div.hpapp > div > div.hpl.hp_cont,
-body > div.hpapp > div > div:nth-child(5) > div,
-body > div.hpapp > div > div:nth-child(1) > div.hp_top_cover_container_tall > div {
-	background-color: var(--depth1) !important;
-}
-
-#sb_form > div {
-	background-color: var(--depth2) !important;
-}
-
-#sw_as > div,
-#sw_as > div > div.sa_drw {
-	background-color: var(--depth3) !important;
-}
-
-#b_header {
-	border-color: var(--depth3) !important;
-}
-
-#sa_ans > div > div > div.b_vPanel > div > div > * {
-	color: var(--accent1) !important;
-}
-
-#sa_ul > li {
-	background-color: var(--depth3) !important;
-}
-
-#sa_ul > li:hover {
-	background-color: var(--depth4) !important;
-}
-
-#sa_ans > div > div > div.b_vPanel > div > span,
-#sa_ul > li > div > span > *,
-#sw_as > div > div.sa_drw > p,
-#sa_ul > li > div > div > * {
-	color: var(--font-color) !important;
-}
-
-#as_foot {
-	background-color: var(--depth3) !important;
-}
-
-#b_header > nav > ul > li > a {
-	color: var(--font-color) !important;
-}
-
-#b_results > li,
-#b_context > li,
-#b_context > li > div {
-	background-color: var(--transparent) !important;
-}
-
-#b_results > li > div > div > cite,
-#b_results > li > div > div > div > cite {
-	color: var(--accent2) !important;
-}
-
-#b_context > li > div > div > div > h2,
-#b_context > li > div > div > div > ul > li > div {
-	color: var(--font-color) !important;
-}
-
-#b_context > li > div > div > div {
-	border-color: var(--depth3) !important;
-}
-
-#b_context > li > div {
-	box-shadow: none !important;
-	border-color: var(--depth4) !important;
-}
-
-#b_context > li > div > div > div > div > div > div,
-#b_context > li > div > div > div > div > div > ul > li,
-#b_context > li > div > div > div > div {
-	border-color: var(--depth4) !important;
-}
-
-#wire2 > div,
-#b_context > li > div > div > div > div > h2 {
-	color: var(--font-color) !important;
-}
-
-#c0 {
-	background-color: var(--depth2) !important;
-	border-color: var(--depth4) !important;
-	color: var(--font-color) !important;
-}
-
-#b_algospacing > div > a {
-	color: var(--font-color) !important;
-}
-
-#b_algospacing > ul > li {
-	border-color: var(--depth4) !important;
-}
-
-#b_algospacing > ul > li > a {
-	color: var(--accent1) !important;
-}
-
-#b_results > li.b_algo.b_vtl_deeplinks > form > span > input[type='submit'] {
-	background-color: var(--accent1) !important;
-	border-color: var(--accent1) !important;
-}
-
-#brsv3 > h2 {
-	color: var(--accent1) !important;
-}
-
-#ans_nws > div div div div div div div div div div div div,
-.na_cl.lc .na_citem {
-	color: var(--font-color) !important;
-	background-color: var(--depth3) !important;
-}
-
-.big_logo_left_gradient,
-.big_logo_right_gradient {
-	background: none !important;
-}
-
-#ans_nws > div > div > div {
-	border-color: var(--depth4) !important;
-}
-
-#brsv3 > ul > li a {
-	background-color: var(--depth3) !important;
-}
-
-#brsv3 > ul > li > a > div {
-	color: var(--accent1) !important;
-}
-
-#b_footer {
-	background-color: var(--depth2) !important;
-}
-
-#b_results > li > nav > ul > li > a:hover,
-#b_results > .b_pag a:hover {
-	background-color: var(--depth3) !important;
+	--less-important-font-color: #b3b3b3;
 }
 
 html {
 	min-height: 100% !important;
-	background-color: var(--depth1) !important;
 }
 
-#b_context > li > div > h2 {
+/*============*/
+/* Background */
+/*============*/
+
+/* Background */
+html,
+body,
+#b_content {
+	background: var(--depth1) !important;
+}
+
+#b_header {
+	border-bottom: 1px solid var(--depth4) !important;
+}
+
+/*============*/
+/* Search Bar */
+/*============*/
+
+/* Background */
+.b_searchboxForm,
+.sa_as .sa_drw,
+.b_searchboxForm.as_rsform #sw_as .sa_as,
+#sw_as .as_rmhswarning {
+	background: var(--depth2) !important;
+}
+
+#sw_as li.pp_tile.sa_hv,
+.b_searchboxForm #sw_as .sa_hv {
+	background: var(--depth3) !important;
+}
+
+/* Text color */
+#b_header .b_searchboxForm .b_searchbox {
 	color: var(--font-color) !important;
+}
+
+#sw_as .sa_as .sa_drw .sa_sg .sa_tmHS,
+#sw_as .sa_as .sa_drw .sa_sg div.sa_tmHS strong,
+#sw_as .sa_as .sa_drw .pp_tile.pp_sTile.pp_sTileHS div.pp_title strong {
+	color: var(--accent1) !important;
+}
+
+#sw_as .sa_as .sa_drw,
+#sw_as .sa_as li.pp_tile,
+#sw_as .sa_as .sa_tm strong,
+#sw_as .sa_as table,
+#sw_as .sa_as .sa_sg .sa_tm,
+#sw_as .rs_tx,
+#sw_as .pasf_tx,
+#sw_as .sa_as .b_demoteText,
+#sw_as .pasf_rich_drw .lite-entcard-exp-itemdata,
+#sw_as .sa_hd {
+	color: var(--less-important-font-color) !important;
+}
+
+#sw_as .sa_as .sa_sg:hover .sa_tm strong,
+#sw_as .sa_as .sa_sg:hover .sa_tm,
+#sw_as li.pp_tile:hover div.pp_title,
+#sw_as li.pp_tile:hover span.b_demoteText,
+#sw_as .sa_as .sa_sgr:hover .sa_tm,
+#sw_as .sa_as .sa_sgr:hover .sa_tm strong,
+#sw_as .pasf_rich_drw li:hover .lite-entcard-exp-itemdata,
+#sw_as .pasf_rich_drw .sa_sg_pasf .sa_img a:hover {
+	color: var(--font-color) !important;
+	text-decoration-color: var(--font-color);
+}
+
+/*=============*/
+/* Main Header */
+/*=============*/
+
+/*---------------*/
+/* Info and date */
+/*---------------*/
+
+/* Background */
+#b_tween .ftrB a.ftrH:hover,
+#b_tween .ftrB a.ftrH:focus,
+#b_tween .ftrB a.ftrH:visited,
+#b_tween .ftrB a.ftrH.b_selected,
+#b_tween .ftrB .b_dropdown {
+	background-color: var(--depth2) !important;
+}
+
+#b_tween .ftrB a.ftrH:active {
+	background-color: var(--depth3) !important;
+}
+
+/* Text Color */
+#b_tween,
+#b_tween a.ftrH {
+	color: var(--less-important-font-color) !important;
+}
+
+#b_tween .b_dropdown .b_selected,
+#b_tween .b_dropdown .b_toggle,
+.b_demoteText,
+.ftrD .b_vPanel input.ctxt {
+	color: var(--font-color) !important;
+}
+
+/* Border */
+#b_tween .ftrB .b_dropdown,
+.ftrD > div.b_vPanel,
+.ccal.b_focus,
+.ccal {
 	border-color: var(--depth4) !important;
 }
 
-#b_context > li > div > ul > li {
+/*--------------*/
+/* Apply Button */
+/*--------------*/
+
+/* Background */
+a.cbtn,
+a.cbtn:active {
+	background-color: var(--depth3) !important;
+}
+
+a.cbtn:hover {
+	background-color: var(--depth4) !important;
+}
+
+/* Text Color */
+a.cbtn {
+	color: var(--font-color) !important;
+}
+
+/* Border */
+a.cbtn {
 	border-color: var(--depth4) !important;
 }
 
-#b_context > li > div > ul > li > a:hover {
-	background-color: var(--depth3) !important;
-}
+/*------*/
+/* Tabs */
+/*------*/
 
-#b_results > li > div > div > div > div > div > div > ul > li {
+/* Text Color */
+.b_scopebar .b_active a,
+.b_scopebar a:hover,
+.id_button:hover {
 	color: var(--font-color) !important;
-	background-color: var(--depth3) !important;
 }
 
-#b_results > li > div > div > div > div > div {
+.b_scopebar,
+.b_scopebar a,
+.b_scopebar a:visited,
+.id_button,
+.id_button:visited {
+	color: var(--less-important-font-color) !important;
+}
+
+/* `More` Background */
+#b-scopeListItem-menu .b_sp_over_menu {
+	background: var(--depth2) !important;
+}
+
+#b-scopeListItem-menu li.b_sp_over_item:hover {
+	background: var(--depth3) !important;
+}
+
+/* `More` Text Color */
+#b-scopeListItem-menu .b_sp_over_menu {
+	color: var(--font-color) !important;
+}
+
+/*=================*/
+/* Left Side Cards */
+/*=================*/
+
+/* Background */
+#b_content #b_lgd ul > li {
+	background: var(--depth2) !important;
+	border: 1px solid var(--depth4) !important;
+}
+
+/* Text Color */
+#b_content #b_lgd ul > li a .b_secondaryFocus {
+	color: var(--font-color) !important;
+}
+
+#b_content #b_lgd ul > li a .b_secondaryFocus .b_lgdSubtitle,
+#b_content #b_lgd .disambig-outline h2 {
+	color: var(--less-important-font-color) !important;
+}
+
+/*==========*/
+/* Overview */
+/*==========*/
+
+/* Main Theme */
+.ent-dtab-ovr.ent-dtab-ovr-nl.def-override.ent-dtab-tabuxv1 {
+	border: 1px solid var(--depth4) !important;
+	background: var(--depth2) !important;
+}
+
+.ent-dtab-ovr.ent-dtab-ovr-nl.def-override.ent-dtab-tabuxv1:hover {
+	border: 1px solid var(--depth4) !important;
+	background: var(--depth3) !important;
+}
+
+/* Main Theme Text */
+.ent-dtab-ovr.ent-dtab-ovr-nl.def-override.ent-dtab-tabuxv1,
+.ent-dtab-dtxt-ov.ent-dtab-tabuxv1 {
+	color: var(--font-color) !important;
+}
+
+.ent-dtab-ovr.ent-dtab-ovr-nl.def-override.ent-dtab-tabuxv1:hover,
+.ent-dtab-ovr.ent-dtab-ovr-nl.def-override.ent-dtab-tabuxv1:hover .ent-dtab-dtxt-ov.ent-dtab-tabuxv1 {
+	color: var(--accent1) !important;
+}
+
+/* Tabs */
+.ent-dtab-btn.def-override.ent-dtab-tabuxv1 {
+	background: var(--depth2) !important;
+	border: 1px solid var(--depth4) !important;
+	color: var(--font-color) !important;
+}
+
+.ent-dtab-btn.def-override.ent-dtab-tabuxv1:hover {
+	background: var(--depth3) !important;
+	border: 1px solid var(--accent1) !important;
+	color: var(--accent1) !important;
+}
+
+#b_pole .b_wpTabsWrapper,
+#b_content #b_pole .ent-dtab-content,
+#b_content #b_pole .ent-dtab-content > div:first-child {
+	background: var(--depth1) !important;
+}
+
+#b_pole .b_wpTabsWrapper:last-child {
+	border-bottom: 1px solid var(--depth4) !important;
+}
+
+/*================*/
+/* Search Results */
+/*================*/
+
+/* Background */
+#b_results > li {
+	background-color: var(--transparent) !important;
+}
+
+/*=======================*/
+/* Right Panel More Info */
+/*=======================*/
+
+/* Background */
+#b_content #b_context > .b_ans,
+.lite-entcard_eeb5b .l_ecrd_bkg_hlt,
+.lite-entcard-exp {
+	background: var(--depth2) !important;
+}
+
+.ux_ecmp ul li:nth-child(2n + 1) {
+	background: var(--depth3) !important;
+}
+
+/* Text Color */
+.l_ecrd_qfcts_prim,
+.l_ecrd_txt_gl,
+.lite-entcard-exp-itemdata,
+.lite-entcard-exp > h2 {
+	color: var(--font-color) !important;
+}
+
+.lite-entcard-main,
+.lite-entcard-main a,
+.lite-entcard-main a:visited,
+.l_ecrd_ftr_txt,
+.carousel_seemore .seeAll_txt {
+	color: var(--less-important-font-color) !important;
+}
+
+.l_ecrd_ftr_txt > a {
+	color: var(--accent1) !important;
+}
+
+/* Border */
+.lite-entcard-blk:not(:last-child):not(.l_ecrd_bkg_bdrls),
+.lite-entcard-main > div:not(:last-child) > .lite-entcard-blk:not(.l_ecrd_bkg_bdrls),
+.l_ecrd_qfcts_fct:not(:first-child) {
 	border-color: var(--depth4) !important;
 }
 
-#b_results > li > div > div > div > div > div > div > ul > li:hover {
-	box-shadow: inset 0 -3px 0 0 var(--accent2) !important;
+.ux_ecmp > ul {
+	border-width: 1px !important;
+	border-style: solid !important;
+	border-color: var(--depth4) !important;
 }
 
-.tab-navl,
-.tab-navr {
-	background-color: var(--depth3) !important;
-}
-
-.tab-navl > svg,
-.tab-navr > svg {
-	fill: var(--font-color) !important;
-}
-
-.tab-active {
-	box-shadow: inset 0 -3px 0 0 var(--accent1) !important;
-}
-
-#sa_ul > li,
-#sa_ul {
-	background-color: var(--depth3) !important;
-	color: var(--font-color) !important;
+/* Fill */
+.l_ecrd_mttl svg > path {
+	fill: var(--less-important-font-color) !important;
 }

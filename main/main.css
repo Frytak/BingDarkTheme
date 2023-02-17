@@ -1,163 +1,150 @@
 /** @format */
 
 :root {
-	--depth1: #2e2e2e;
-	--depth2: #303030;
-	--depth3: #3b3b3b;
-	--depth4: #444444;
+	--depth1: #2a2c2a;
+	--depth2: #323636;
+	--depth3: #3a4042;
+	--depth4: #434a4d;
 
 	--accent1: #8dd5ff;
 
 	--transparent: rgba(0, 0, 0, 0);
 
 	--font-color: #ffffff;
+	--less-important-font-color: #b3b3b3;
 }
 
-* {
-	color: var(--font-color);
+html {
+	overflow: auto !important;
 }
 
-a {
-	color: var(--accent1);
-}
+/*============*/
+/* Background */
+/*============*/
 
-/*
-================================
-MAIN PAGE
-================================
-*/
+/* Hide News Feed */
+.bottom_row .scroll_cont.show_none {
+	display: none !important;
+}
 
 /* Background */
-body,
-body > div,
-body > div > div,
-body > div > div > div,
-body > div > div > div > div,
-body > div > div > div > div > div {
-	background-color: var(--depth1) !important;
+.img_cont {
+	background-image: none !important;
 }
 
-/* SearchBar Background */
-#sb_form {
+.bottom_row,
+.hp_top_cover,
+.img_cont {
+	background: var(--depth1) !important;
+}
+
+.below_sbox .cdxPrompt .cdxAcrylic {
+	background: var(--depth2) !important;
+}
+
+/*=====================*/
+/* ChatGPT Message Box */
+/*=====================*/
+
+/* Background */
+.below_sbox .cdxPrompt .cdxAcrylic .cdxHeader .cdxPagination .cdxPage.selected.paused,
+.below_sbox .cdxPrompt .cdxAcrylic .cdxHeader .cdxPagination .cdxPage > span {
+	background: var(--font-color) !important;
+}
+
+/* Learn More Button */
+.below_sbox .cdxPrompt .cdxAcrylic .cdxButton.cdxAltButton {
+	color: var(--font-color) !important;
+	background: linear-gradient(var(--depth2), var(--depth2)) padding-box, linear-gradient(81.62deg, #2870ea 8.72%, #1b4aef 85.01%) border-box !important;
+}
+
+/* Text Color */
+.below_sbox .cdxPrompt .cdxMain .cdxNudgeCard .cdxTitle {
+	color: var(--font-color) !important;
+}
+
+/* Arrows */
+.cdxNav > svg > path {
+	fill: var(--font-color) !important;
+}
+
+/*============*/
+/* Search Bar */
+/*============*/
+
+/* Background */
+.sbox .sb_form,
+.sbox .sb_form #sw_as .sa_as #sa_ul.sa_drw,
+.sbox .sb_form #sw_as .sa_as #sa_ul.sa_drw::before,
+#sw_as .as_rmhswarning {
 	background-color: var(--depth2) !important;
 }
 
-/* SearchBar Suggestion Box */
-#sa_ul,
-#sa_ul > li,
-#sa_ans,
-#sa_ans > div,
-#sa_ans > div > div,
-#as_foot {
+#sw_as .sa_hv {
 	background-color: var(--depth3) !important;
 }
 
-/* SearchBar Suggestion Box Previously Searched */
-#sa_ul > li > div > span > strong {
-	font-weight: bold;
-	color: var(--accent1) !important;
+/* Text color */
+.sbox .sb_form .sb_form_q,
+#sw_as .sa_as .sa_sg .sa_tm,
+#sw_as .sa_as .b_tHeader,
+#sw_as .sa_as .b_demoteText,
+#sw_as .sa_as .b_secondaryText,
+#sw_as .sa_as .b_attribution,
+#sw_as .sa_as .b_factrow,
+#sw_as .sa_as #sa_ul .b_focusLabel,
+#sw_as .sa_as .b_footnote,
+#sw_as .sa_as .b_ad .b_adlabel,
+#sw_as .sa_as .b_expando .b_subModule,
+#sw_as .sa_as .b_expando .b_suppModule,
+#sw_as .sa_as .b_algo .b_vList td,
+#sw_as .sa_as .b_expando .b_secondaryText,
+#sw_as .sa_as .b_expando .b_attribution,
+#sw_as .sa_as .b_expando .b_factrow,
+#sw_as .sa_as .b_expando .b_footnote,
+#sw_as .sa_as .ctxtb,
+#sw_as .as_msbblocksug,
+#sw_as .as_msbblockheader,
+#sw_as .sa_msbribboncontainer,
+#sw_as .sa_as .sa_rmvd,
+#sw_as #sa_ul .sa_hd,
+#sw_as strong {
+	color: var(--font-color) !important;
 }
 
-/* SearchBar Suggestion Box History Settings */
-#as_foot_link,
-.as_rmhswarningtxt {
-	color: var(--accent1) !important;
+/*==========*/
+/* Settings */
+/*==========*/
+
+#id_hbfo,
+.hb_card {
+	background-color: var(--depth2) !important;
 }
 
-/* SearchBar Suggestion Box Hover */
-#sa_ul > li:hover,
-#sa_ans:hover,
-#sa_ans > div:hover,
-#sa_ans > div > div:hover {
-	background-color: var(--depth4) !important;
-}
-
-/* SearchBar Suggestion Box Little Thingy */
-#sa_ul::before {
+.hb_section:active,
+.hb_section:hover,
+.hb_section:visited,
+.hb_section:focus {
 	background-color: var(--depth3) !important;
 }
 
-/* Introducing the new Bing Box */
-
-#sb_form > div.below_sbox > div > div > div {
-	background-color: var(--depth2) !important;
-}
-
-#sb_form > div > div > div > div > div > div > div {
+.hbic_col,
+.hb_title_col,
+.hb_value_col,
+.hb_subtitlerow,
+.hb_descrow,
+#hbchatbtn label {
 	color: var(--font-color) !important;
 }
 
-.cdxTitle,
-#sb_form > div > div > div > div > div > a,
-#sb_form > div > div > div > div > div > a {
-	color: var(--font-color) !important;
+.hb_detrow,
+.hb_sect_container .menuFooterText,
+.hb_sect_container .msft {
+	color: var(--less-important-font-color) !important;
 }
 
-#sb_form > div > div > div > div > div > a {
-	background-color: var(--transparent) !important;
-	background: none;
-}
-
-#id_sc {
-	color: var(--font-color) !important;
-}
-
-/* Burger Menu */
-#id_hbfo {
-	color: var(--font-color) !important;
-
-	background-color: var(--depth2) !important;
-}
-
-#hbchatbtn > div {
-	background-color: var(--depth2);
-}
-
-#hbchatbtn > div:hover {
-	background-color: var(--depth3);
-}
-
-#hbchatbtn > div > a:hover {
-	background-color: var(--depth4);
-}
-
-#HBContent > div > div:hover,
-#HBContent > a:hover,
-#HBContent > div > div:focus,
-#HBContent > a:focus {
-	background-color: var(--depth3);
-}
-
-#hbsettree > a:hover,
-#hbsettree > a:focus,
-#hb_expandible > div:hover,
-#hb_expandible > div:focus,
-#qs_hp_expando:focus,
-#qs_hp_expando:hover {
-	background-color: var(--depth4);
-}
-
-#HBContent > div div,
-#HBContent > a > div div {
-	color: var(--font-color) !important;
-}
-
-#HBContent > div:nth-child(7) > div:nth-child(2) > div > ul > li > a {
+.hb_sect_container .menuFooterLink,
+.hb_sect_container .separator,
+.hb_sect_container .mcp_footer {
 	color: var(--accent1) !important;
-}
-
-#HBContent > div:nth-child(7) > div:nth-child(2) > div > span {
-	color: var(--font-color) !important;
-}
-
-#HBContent > div:nth-child(7) > div:nth-child(2) > div > span::after {
-	content: ' and a faggot Hyena';
-}
-
-#sa_ans > div > div > div > div > div > * {
-	color: var(--accent1) !important;
-}
-
-#sa_ans > div > div > div > div > span {
-	color: var(--font-color) !important;
 }
