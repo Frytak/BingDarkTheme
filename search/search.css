@@ -25,6 +25,10 @@ html {
 	min-height: 100% !important;
 }
 
+a {
+	color: var(--accent1) !important;
+}
+
 /*============*/
 /* Background */
 /*============*/
@@ -38,6 +42,19 @@ body,
 
 #b_header {
 	border-bottom: 1px solid var(--depth4) !important;
+}
+
+/*=======*/
+/* Pages */
+/*=======*/
+
+/* Background */
+#b_content .b_pag a.sb_bp:hover {
+	background: var(--depth2) !important;
+}
+
+#b_content .b_pag a.sb_pagS_bp {
+	background: var(--depth3) !important;
 }
 
 /*============*/
@@ -261,6 +278,27 @@ a.cbtn {
 	border-bottom: 1px solid var(--depth4) !important;
 }
 
+/*============*/
+/* Focus Card */
+/*============*/
+
+/* Background */
+#b_results > li.b_ans.b_topborder {
+	background: var(--depth2) !important;
+}
+
+/* Text Color */
+#b_results > .b_top .b_focusTextExtraSmall,
+#b_results > .b_top .b_focusTextSmall,
+#b_results > .b_top .b_focusTextMedium,
+#b_results > .b_top .b_focusTextLarge {
+	color: var(--font-color) !important;
+}
+
+.b_focusLabel {
+	color: var(--less-important-font-color) !important;
+}
+
 /*================*/
 /* Search Results */
 /*================*/
@@ -270,6 +308,126 @@ a.cbtn {
 	background-color: var(--transparent) !important;
 }
 
+#b_results .b_algo .b_deeplinks_block_container .b_vlist2col.b_deep ul li:hover,
+.rc_vlHorizontalImage .rc_vlCard {
+	background: var(--depth2) !important;
+}
+
+/* Text Color */
+.b_imgcap_altitle p strong {
+	color: var(--font-color) !important;
+}
+
+#b_results > li .b_wikiRichcard_noHeroSection .b_wikiRichcard p,
+.b_caption,
+.b_caption .b_factrow strong,
+.b_caption p strong,
+.b_algo .b_factrow,
+.recommendationsTableTitle h2,
+.b_imgcap_altitle .b_factrow strong,
+#b_results .b_algo .b_vlist2col.b_deep {
+	color: var(--less-important-font-color) !important;
+}
+
+.sp_pssl {
+	color: var(--accent2) !important;
+}
+
+/*--------*/
+/* Tables */
+/*--------*/
+
+/* Text Color */
+.b_vList .tabcap td,
+.b_vList .tabcap table tr th {
+	color: var(--less-important-font-color) !important;
+}
+
+/* Border */
+.b_vList .tabcap table tr {
+	border-color: var(--depth4) !important;
+}
+
+/*------------------*/
+/* Wikipedia Widget */
+/*------------------*/
+
+/* Background */
+#b_results .b_algoBigWiki.b_wiki_bg_color_kc {
+	background-image: none !important;
+	background-color: var(--depth2) !important;
+}
+
+.b_wiki_cover,
+.b_rc_gb_expansion_cover {
+	background: none !important;
+}
+
+.b_widgetContainer {
+	background-color: var(--depth2) !important;
+}
+
+.b_rc_gb_w_content,
+#b_rc_gb_origin.b_rc_gb_sub .b_rc_gb_sub_column > div {
+	background-color: var(--depth3) !important;
+}
+
+.b_rc_gb_widget_link.b_rc_gb_w_item:hover {
+	background-color: var(--depth4) !important;
+}
+
+/* Text Color */
+.b_algoBigWiki .b_rc_gb_widget_title,
+.b_rc_gb_widget_link.b_rc_gb_w_item,
+.b_rc_gb_sub_hero .b_rc_gb_sub_cell .b_paractl,
+.wiki_seemore div,
+.b_promoteText,
+#b_results {
+	color: var(--font-color) !important;
+}
+
+#b_results .b_algoBigWiki .b_rc_gb_source {
+	color: var(--less-important-font-color) !important;
+}
+
+/* Share SVG */
+.shared_icon {
+	filter: brightness(140%);
+}
+
+/*=================*/
+/* People also Ask */
+/*=================*/
+
+/* Background */
+#df_listaa {
+	background-color: var(--depth2) !important;
+}
+
+.df_alaskcarousel.rqnaContainerwithfeedback .openans_gradient_div {
+	background: none !important;
+}
+
+/* Text Color */
+.df_alaskcarousel #df_listaa .b_vPanel .df_hd .b_primtxt,
+.df_alaskcarousel .df_qntext,
+#df_listaa .b_vPanel .df_hd .b_primtxt,
+#df_listaa .b_module_expansion .b_expansion_text {
+	color: var(--font-color) !important;
+}
+
+.df_alaskcarousel .df_alsocon,
+.df_alsocon {
+	color: var(--less-important-font-color) !important;
+}
+
+/* Border */
+#relatedQnAListDisplay,
+#df_listaa .b_module_expansion .b_expansion_wrapper.b_expand,
+#relatedQnAListDisplay > div {
+	border-color: var(--depth4) !important;
+}
+
 /*=======================*/
 /* Right Panel More Info */
 /*=======================*/
@@ -277,19 +435,23 @@ a.cbtn {
 /* Background */
 #b_content #b_context > .b_ans,
 .lite-entcard_eeb5b .l_ecrd_bkg_hlt,
-.lite-entcard-exp {
-	background: var(--depth2) !important;
+.lite-entcard-exp,
+#b_context .b_entityTP {
+	background: none !important;
+	background-color: var(--depth2) !important;
 }
 
 .ux_ecmp ul li:nth-child(2n + 1) {
-	background: var(--depth3) !important;
+	background: none !important;
+	background-color: var(--depth3) !important;
 }
 
 /* Text Color */
 .l_ecrd_qfcts_prim,
 .l_ecrd_txt_gl,
 .lite-entcard-exp-itemdata,
-.lite-entcard-exp > h2 {
+.lite-entcard-exp > h2,
+#b_context .b_entityTitle {
 	color: var(--font-color) !important;
 }
 
@@ -297,11 +459,18 @@ a.cbtn {
 .lite-entcard-main a,
 .lite-entcard-main a:visited,
 .l_ecrd_ftr_txt,
-.carousel_seemore .seeAll_txt {
+.carousel_seemore .seeAll_txt,
+#b_context .l_ecrd_vqfcts .b_onpage_expansion .b_expansion_text,
+.b_factrow,
+#b_context .b_factrow,
+.b_footnote,
+#b_context .b_footnote {
 	color: var(--less-important-font-color) !important;
 }
 
-.l_ecrd_ftr_txt > a {
+.l_ecrd_ftr_txt > a,
+.l_ecrd_thmtxt,
+a.l_ecrd_thmtxt {
 	color: var(--accent1) !important;
 }
 
@@ -321,4 +490,277 @@ a.cbtn {
 /* Fill */
 .l_ecrd_mttl svg > path {
 	fill: var(--less-important-font-color) !important;
+}
+
+.sp-ofsite {
+	fill: var(--accent1) !important;
+}
+
+/*==============*/
+/* Explore More */
+/*==============*/
+
+/* Background */
+.b_exploreTitle,
+.b_mgridOuter {
+	background: var(--depth2) !important;
+}
+
+/* Text Color */
+.b_exploreTitle,
+.b_mgridTitle a {
+	color: var(--font-color) !important;
+}
+
+cite {
+	color: var(--less-important-font-color) !important;
+}
+
+/* Border */
+.b_exploreTitle,
+.b_mgridOuter {
+	border-color: var(--depth4) !important;
+}
+
+/*=================*/
+/* See Results For */
+/*=================*/
+
+/* Text Color */
+#b_context {
+	color: var(--font-color) !important;
+}
+
+#b_context #wpc_eif {
+	color: var(--less-important-font-color) !important;
+}
+
+/*=================*/
+/* Related Results */
+/*=================*/
+
+/* Text Color */
+.wpvn_ala_wtt {
+	color: var(--font-color) !important;
+}
+
+.wpvn_ala .wpvn_ala_ssnpt {
+	color: var(--less-important-font-color) !important;
+}
+
+/*======================*/
+/* Related Searches for */
+/*======================*/
+
+/* Background */
+#b_results #brsv3 .b_vList li a {
+	background-color: var(--depth2) !important;
+}
+
+#b_results #brsv3 .b_vList li a:hover {
+	background-color: var(--depth3) !important;
+}
+
+/* Text Color */
+#b_results .b_ans #brsv3 h2 {
+	color: var(--font-color) !important;
+}
+
+#b_results #brsv3 .b_vList a .b_suggestionText {
+	color: var(--accent1) !important;
+}
+
+/*==================*/
+/* Related Searches */
+/*==================*/
+
+/* Text Color */
+.richrsrailtitle h2 {
+	color: var(--font-color) !important;
+}
+
+/* Border */
+.richrswrapper {
+	border-color: var(--depth4) !important;
+}
+
+/*===========*/
+/* Hero Tabs */
+/*===========*/
+
+/* Background */
+.tab-menu li,
+.tab-navl,
+.tab-navr {
+	background-color: var(--depth2) !important;
+}
+
+/* Text Color */
+.tab-menu li {
+	color: var(--less-important-font-color) !important;
+}
+
+.tab-menu li.tab-active {
+	color: var(--font-color) !important;
+}
+
+/* Border */
+.b_wikiRichcard .tab-head {
+	border: none !important;
+}
+
+.tab-menu li.tab-active {
+	box-shadow: inset 0 -3px 0 0 var(--accent1) !important;
+}
+
+/* SVG */
+.tab-navl svg > path,
+.tab-navr svg > path {
+	fill: var(--less-important-font-color) !important;
+}
+
+.tab-navl:hover svg > path,
+.tab-navr:hover svg > path {
+	fill: var(--font-color) !important;
+}
+
+/*=====================*/
+/* Explore with Images */
+/*=====================*/
+
+/* Background */
+#b_results li.b_ans.b_mop.b_mopb {
+	background: var(--depth2) !important;
+}
+
+a.rel_ent {
+	background: var(--depth3) !important;
+}
+
+a.rel_ent:hover {
+	background: var(--depth4) !important;
+}
+
+/* Border */
+a.rel_ent {
+	border-color: var(--depth4) !important;
+}
+
+/*======*/
+/* News */
+/*======*/
+
+/* Background */
+.na_cl.lc .na_citem {
+	background: var(--depth2) !important;
+}
+
+.na_cl.lc .na_citem:hover {
+	background-color: var(--depth3) !important;
+}
+
+#b_results .ans_nws .big_logo_right_gradient {
+	background: none !important;
+}
+
+/* Text Color */
+.na_cnt .na_t {
+	color: var(--font-color) !important;
+}
+
+.ans_nws .na_cnt .b_secondaryText,
+#b_results .ans_nws .bigCaption.big_pub_logo .cap_txt,
+#ans_nws .na_cnt .citm_spt {
+	color: var(--less-important-font-color) !important;
+}
+
+/* Border */
+#b_results .ans_nws .new_see_more_container .new_see_more_line {
+	border-color: var(--depth4) !important;
+}
+
+/*================*/
+/* Topic Question */
+/*================*/
+
+/* Background */
+.scs_t {
+	background: var(--depth2) !important;
+}
+
+/* Text Color */
+.scs_q {
+	color: var(--font-color) !important;
+}
+
+.scs_tx {
+	color: var(--less-important-font-color) !important;
+}
+
+/*========*/
+/* Videos */
+/*========*/
+
+/* Background */
+.b_vidAns > div > div {
+	background-color: var(--depth2) !important;
+}
+
+.mc_vtvc_meta_w .mc_vtvc_meta,
+.mc_vtvc_meta_bg_w,
+.mc_vtvc {
+	background: none !important;
+	background-color: var(--depth3) !important;
+}
+
+.mc_vtvc:hover .mc_vtvc_meta_w .mc_vtvc_meta,
+.mc_vtvc:hover .mc_vtvc_meta_bg_w,
+.mc_vtvc:hover,
+.mc_vtvc:hover #serpvidans .rel_ent_w.rel_ent_scr.qpexp:not(.rel_ent_crs) .rel_ent_c .rel_ent {
+	background-color: var(--depth4) !important;
+}
+
+.mc_vtvc_cb_w {
+	display: none;
+}
+
+#serpvidans .qpbold {
+	background-color: var(--depth2) !important;
+}
+
+#serpvidans .rel_ent_w.rel_ent_scr.qpexp:not(.rel_ent_crs) .rel_ent_c .rel_ent {
+	background-color: var(--depth3) !important;
+}
+
+.grad {
+	background: none !important;
+}
+
+/* Text Color */
+.mc_vtvc_title,
+.rel_ent_tw {
+	color: var(--font-color) !important;
+}
+
+.mc_vtvc_meta_block {
+	color: var(--less-important-font-color) !important;
+}
+
+/* Border */
+#serpvidans .rel_ent_w.rel_ent_scr.qpexp:not(.rel_ent_crs) .rel_ent_c .rel_ent {
+	border-color: var(--depth4) !important;
+}
+
+/*========*/
+/* Footer */
+/*========*/
+
+/* Background */
+.b_footer {
+	background-color: var(--depth2) !important;
+}
+
+/* Text Color */
+.b_footer {
+	color: var(--less-important-font-color) !important;
 }
