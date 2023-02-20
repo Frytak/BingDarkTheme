@@ -279,6 +279,62 @@ a.cbtn {
 	border-bottom: 1px solid var(--depth4) !important;
 }
 
+/*=======================*/
+/* Related... Everything */
+/*=======================*/
+
+/* Background */
+.pagereco_CB {
+	background-color: var(--depth2) !important;
+}
+
+.pagereco_CBImageCard,
+.pagereco_CBTextCard {
+	background-color: var(--depth3) !important;
+}
+
+/* Text Color */
+.pagereco_CBTextCard .b_text {
+	color: var(--font-color) !important;
+}
+
+/*============*/
+/* Dictionary */
+/*============*/
+
+/* Background */
+#b_content #b_results .dcajx .suggDD .ctxt,
+#b_content .dcajx .suggDD .ctxt,
+#b_content #b_results .dcajx.dcsbxhdr .dcbtn,
+#b_content .dcajx.dcsbxhdr .dcbtn {
+	background: var(--depth2) !important;
+}
+
+#b_content #b_results .dcajx.dcsbxhdr .dcbtn:hover,
+#b_content .dcajx.dcsbxhdr .dcbtn:hover {
+	background: var(--depth3) !important;
+}
+
+/* Text Color */
+#b_content #b_results .dcajx.dcsbxhdr .dcbtn,
+#b_content .dcajx.dcsbxhdr .dcbtn,
+#b_content #b_results .b_ans .dcont .dc_mn,
+#b_content .b_ans .dcont .dc_mn {
+	color: var(--font-color) !important;
+}
+
+#b_content #b_results .b_ans .dcont .dc_prn,
+#b_content .b_ans .dcont .dc_prn {
+	color: var(--less-important-font-color) !important;
+}
+
+/* Border */
+.ctxt,
+#b_content #b_results .dcajx.dcsbxhdr .dcbtn,
+#b_content .dcajx.dcsbxhdr .dcbtn {
+	border-color: var(--depth4) !important;
+}
+
 /*============*/
 /* Focus Card */
 /*============*/
@@ -290,7 +346,8 @@ a.cbtn {
 	background-color: var(--depth2) !important;
 }
 
-.ref_multiAns .b_slidebar .slide {
+.ref_multiAns .b_slidebar .slide,
+.df_alaskcarousel .df_alsoAskCard {
 	background-color: var(--depth3) !important;
 }
 
@@ -299,7 +356,8 @@ a.cbtn {
 #b_results > .b_top .b_focusTextSmall,
 #b_results > .b_top .b_focusTextMedium,
 #b_results > .b_top .b_focusTextLarge,
-.qna_body {
+.qna_body,
+.df_c .rwrl {
 	color: var(--font-color) !important;
 }
 
@@ -309,8 +367,14 @@ a.cbtn {
 	color: var(--less-important-font-color) !important;
 }
 
+hr.df_fn {
+	background-color: var(--depth4) !important;
+	color: var(--depth4) !important;
+}
+
 /* Border */
-.b_tophb .bgtopgr {
+.b_tophb .bgtopgr,
+#b_content #b_results .dictline {
 	border-color: var(--depth4) !important;
 }
 
@@ -653,7 +717,8 @@ cite {
 /*======================*/
 
 /* Background */
-#b_results #brsv3 .b_vList li a {
+#b_results #brsv3 .b_vList li a,
+#rs_lgw_list a {
 	background-color: var(--depth2) !important;
 }
 
@@ -662,7 +727,8 @@ cite {
 }
 
 /* Text Color */
-#b_results .b_ans #brsv3 h2 {
+#b_results .b_ans #brsv3 h2,
+#rs_lgw_list a {
 	color: var(--font-color) !important;
 }
 
@@ -829,7 +895,8 @@ a.rel_ent {
 	border-radius: 6px !important;
 }
 
-.b_vidAns > div > div {
+.b_vidAns > div > div,
+.b_caption .captionMediaCard .b_imagePair.wide_wideAlgo {
 	background-color: var(--depth2) !important;
 }
 
@@ -869,7 +936,8 @@ a.rel_ent {
 	color: var(--font-color) !important;
 }
 
-.mc_vtvc_meta_block {
+.mc_vtvc_meta_block,
+.b_caption .captionMediaCard .b_imagePair a p {
 	color: var(--less-important-font-color) !important;
 }
 
