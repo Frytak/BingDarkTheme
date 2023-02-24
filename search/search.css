@@ -963,3 +963,48 @@ a.rel_ent {
 .b_footer {
 	color: var(--less-important-font-color) !important;
 }
+
+/*=========*/
+/* AI Chat */
+/*=========*/
+
+/* Background */
+.sydwrap_wrapper {
+	background-color: var(--depth2) !important;
+}
+
+.sydwrap_wrapper #syd_qna_suggestion .syd_qna_suggestion_item,
+.sydwrap_wrapper .b_syd_input_container .b_syd_textarea_container,
+.sydwrap_wrapper #b_syd_tb_border,
+.sydwrap_wrapper .b_syd_input_container {
+	background-color: var(--depth3) !important;
+}
+
+.sydwrap_wrapper #syd_qna_suggestion .syd_qna_suggestion_item:hover {
+	background-color: var(--depth4) !important;
+}
+
+.b_wpt_bg .sydwrap_wrapper div#b_syd_sm_chat.sydwrap_sm_chat .b_wpt_chat {
+	background-color: var(--transparent) !important;
+	padding: none !important;
+}
+
+/* Text Color */
+
+.b_wpt_bg.b_wpt_bg_sc_high .sydwrap_wrapper #syd_suggestion_wrapper div#syd_qna_suggestion .syd_qna_suggestion_item,
+.sydwrap_wrapper .b_syd_input_container .b_syd_textarea_container #b_syd_sm_tb {
+	color: var(--font-color) !important;
+}
+
+/* Border */
+.sydwrap_wrapper {
+	box-shadow: none !important;
+}
+
+.b_wpt_bg .sydwrap_wrapper div#b_syd_sm_chat.sydwrap_sm_chat .b_wpt_chat {
+	box-shadow: 0 0 0 1px var(--depth3) !important;
+}
+
+.b_wpt_bg.b_wpt_bg_sc_high .sydwrap_wrapper #syd_suggestion_wrapper div#syd_qna_suggestion .syd_qna_suggestion_item {
+	border-color: var(--depth4) !important;
+}
