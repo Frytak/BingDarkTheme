@@ -14,6 +14,7 @@
 
 	--accent1: #85d2ff;
 	--accent2: #00c1cf;
+	--red: #ff3c3c;
 
 	--transparent: rgba(0, 0, 0, 0);
 
@@ -559,107 +560,6 @@ hr.df_fn {
 #relatedQnAListDisplay > div {
 	border-color: var(--depth4) !important;
 }
-
-/*=======================*/
-/* Right Panel More Info */
-/*=======================*/
-
-/* Background */
-#b_content #b_context > .b_ans,
-.l_ecrd_bkg_hlt,
-.lite-entcard-exp,
-#b_context .b_entityTP {
-	background: none !important;
-	background-color: var(--depth2) !important;
-}
-
-.ux_ecmp ul li:nth-child(2n + 1),
-.l_ecrd_twowiset_4 li,
-.l_ecrd_twoimgset_item {
-	background: none !important;
-	background-color: var(--depth3) !important;
-}
-
-.spl_ugcpoll_bgthm {
-	background-color: var(--depth4) !important;
-}
-
-/* Text Color */
-.l_ecrd_qfcts_prim,
-.l_ecrd_txt_gl,
-.lite-entcard-exp-itemdata,
-.lite-entcard-exp > h2,
-#b_context .b_entityTitle {
-	color: var(--font-color) !important;
-}
-
-.lite-entcard-main,
-.lite-entcard-main a,
-.lite-entcard-main a:visited,
-.l_ecrd_ftr_txt,
-.carousel_seemore .seeAll_txt,
-#b_context .l_ecrd_vqfcts .b_onpage_expansion .b_expansion_text,
-.b_factrow,
-#b_context .b_factrow,
-.b_footnote,
-#b_context .b_footnote {
-	color: var(--less-important-font-color) !important;
-}
-
-.l_ecrd_ftr_txt > a,
-.l_ecrd_thmtxt,
-a.l_ecrd_thmtxt {
-	color: var(--accent1) !important;
-}
-
-.l_ecrd_txt_hlt,
-.spl_ugcpoll_ttl,
-.spl_ugcpoll_cndt.opt:hover div,
-.spl_ugcpoll_cndt.voted div {
-	color: var(--accent2) !important;
-}
-
-/* Border */
-.lite-entcard-blk:not(:last-child):not(.l_ecrd_bkg_bdrls),
-.lite-entcard-main > div:not(:last-child) > .lite-entcard-blk:not(.l_ecrd_bkg_bdrls),
-.l_ecrd_qfcts_fct:not(:first-child),
-.l_ecrd_imcolheader_bot_icons,
-.l_ecrd_webicons_with_title,
-.spl_ugcpoll_cndt > div,
-#b_context .b_module_expansion .b_expansion_wrapper {
-	border-color: var(--depth4) !important;
-}
-
-.ux_ecmp > ul {
-	border-width: 1px !important;
-	border-style: solid !important;
-	border-color: var(--depth4) !important;
-}
-
-.l_ecrd_brdr_thm {
-	border-color: var(--accent1) !important;
-}
-
-.spl_ugcpoll_cndt.opt:hover div,
-.spl_ugcpoll_cndt.voted div {
-	border-color: var(--accent2) !important;
-}
-
-/* Fill */
-.l_ecrd_mttl svg > path,
-.lc_expfact_plus,
-.b_module_expansion .b_expansion_wrapper .sv_ch {
-	fill: var(--less-important-font-color) !important;
-}
-
-.l_ecrd_c2_svg svg > line {
-	stroke: var(--depth4) !important;
-}
-
-.sp-ofsite {
-	fill: var(--accent1) !important;
-}
-
 /*==============*/
 /* Explore More */
 /*==============*/
@@ -741,6 +641,10 @@ cite {
 /*==================*/
 
 /* Background */
+.richrswrapper {
+	background-color: var(--depth2) !important;
+}
+
 #b_content #b_context .richrsrail_requerydiv a {
 	background-color: var(--depth3) !important;
 }
@@ -800,6 +704,15 @@ cite {
 .tab-navl:hover svg > path,
 .tab-navr:hover svg > path {
 	fill: var(--font-color) !important;
+}
+
+/*===========*/
+/* Images of */
+/*===========*/
+
+/* Background */
+.iacd .irp .srcLnk {
+	background-color: var(--depth3) !important;
 }
 
 /*=====================*/
@@ -964,6 +877,84 @@ a.rel_ent {
 	color: var(--less-important-font-color) !important;
 }
 
+/*=====*/
+/* See */
+/*=====*/
+
+/* Background */
+.b_slideexp .b_hoverFading {
+	background: none !important;
+}
+
+.b_slidebar .slide {
+	background-color: var(--depth2) !important;
+}
+
+/* Text Color */
+.pa_item.pa_vCard p strong,
+.pa_item.pa_vCard .pa_price strong {
+	color: var(--font-color) !important;
+}
+
+/* Border */
+.b_slidebar .slide {
+	box-shadow: none !important;
+	border: 1px solid var(--depth4) !important;
+}
+
+/*=====*/
+/* Map */
+/*=====*/
+
+/* Example: */
+/* https://www.bing.com/search?q=Wenecja */
+
+/* Background */
+.content_wrapper,
+.b_wpt_bg .sydwrap_wrapper div#b_syd_sm_chat.sydwrap_sm_chat .b_wpt_chat .b_wpt_chat_inner:has(> .b_sideBleed) > div.b_sideBleed {
+	background-color: var(--depth3) !important;
+}
+
+.tfil-fc-w .tfil-filter,
+.np_tab_content .poiSld {
+	background-color: var(--depth4) !important;
+}
+
+.see_more_gradient {
+	background: none !important;
+}
+
+.tfil-sc-p .tfil-active {
+	background-color: var(--accent2) !important;
+}
+
+:root {
+	--destlgw-links-bg-color: var(--depth3) !important;
+}
+
+/* Text Color */
+:root {
+	--primtxt: var(--font-color) !important;
+	--regtxt: var(--less-important-font-color) !important;
+}
+
+#pill-container .tfil-filter,
+.dest_ajax .b_focusLabel,
+.np_tab_content .b_focusLabel {
+	color: var(--font-color) !important;
+}
+
+/* Border */
+.content_wrapper,
+#pill-container .tfil-filter {
+	border-color: var(--depth4) !important;
+}
+
+/* SVG */
+#nowCastIconHighLowDetail > svg > path {
+	fill: var(--regtxt) !important;
+}
+
 /*=========*/
 /* AI Chat */
 /*=========*/
@@ -1007,4 +998,138 @@ a.rel_ent {
 
 .b_wpt_bg.b_wpt_bg_sc_high .sydwrap_wrapper #syd_suggestion_wrapper div#syd_qna_suggestion .syd_qna_suggestion_item {
 	border-color: var(--depth4) !important;
+}
+
+/*=======================*/
+/* Right Panel More Info */
+/*=======================*/
+
+/* Background */
+.l_ecrd_bkg_hlt,
+.lite-entcard-exp,
+#b_context .b_entityTP,
+.data_group {
+	background: none !important;
+	background-color: var(--depth2) !important;
+}
+
+.ux_ecmp ul li:nth-child(2n + 1),
+.l_ecrd_twowiset_4 li,
+.l_ecrd_twoimgset_item,
+.b_eImgSet .slide {
+	background: none !important;
+	background-color: var(--depth3) !important;
+}
+
+.spl_ugcpoll_bgthm {
+	background-color: var(--depth4) !important;
+}
+
+li.b_ans {
+	background-color: var(--transparent) !important;
+}
+
+/* Text Color */
+.l_ecrd_qfcts_prim,
+.l_ecrd_txt_gl,
+.lite-entcard-exp-itemdata,
+.lite-entcard-exp > h2,
+#b_context .b_entityTitle,
+.b_subModule h2,
+.b_eImgSetTitle {
+	color: var(--font-color) !important;
+}
+
+.lite-entcard-main,
+.lite-entcard-main a,
+.lite-entcard-main a:visited,
+.l_ecrd_ftr_txt,
+.carousel_seemore .seeAll_txt,
+#b_context .l_ecrd_vqfcts .b_onpage_expansion .b_expansion_text,
+.b_factrow,
+#b_context .b_factrow,
+.b_footnote,
+#b_context .b_footnote,
+.b_eImgSetItem .b_eImgSetData > div:not(:first-child) {
+	color: var(--less-important-font-color) !important;
+}
+
+.l_ecrd_ftr_txt > a,
+.l_ecrd_thmtxt,
+a.l_ecrd_thmtxt,
+.mediumCardTitle {
+	color: var(--accent1) !important;
+}
+
+.l_ecrd_txt_hlt,
+.spl_ugcpoll_ttl,
+.spl_ugcpoll_cndt.opt:hover div,
+.spl_ugcpoll_cndt.voted div {
+	color: var(--accent2) !important;
+}
+
+/* Border */
+.lite-entcard-blk:not(:last-child):not(.l_ecrd_bkg_bdrls),
+.lite-entcard-main > div:not(:last-child) > .lite-entcard-blk:not(.l_ecrd_bkg_bdrls),
+.l_ecrd_qfcts_fct:not(:first-child),
+.l_ecrd_imcolheader_bot_icons,
+.l_ecrd_webicons_with_title,
+.spl_ugcpoll_cndt > div,
+#b_context .b_module_expansion .b_expansion_wrapper,
+.b_subModule,
+.data_group {
+	border-color: var(--depth4) !important;
+}
+
+.ux_ecmp > ul {
+	border-width: 1px !important;
+	border-style: solid !important;
+	border-color: var(--depth4) !important;
+}
+
+.l_ecrd_brdr_thm {
+	border-color: var(--accent1) !important;
+}
+
+.spl_ugcpoll_cndt.opt:hover div,
+.spl_ugcpoll_cndt.voted div {
+	border-color: var(--accent2) !important;
+}
+
+/* Fill */
+.l_ecrd_mttl svg > path,
+.lc_expfact_plus,
+.b_module_expansion .b_expansion_wrapper .sv_ch {
+	fill: var(--less-important-font-color) !important;
+}
+
+.l_ecrd_c2_svg svg > line {
+	stroke: var(--depth4) !important;
+}
+
+.sp-ofsite {
+	fill: var(--accent1) !important;
+}
+
+/*=================*/
+/* Place Info Card */
+/*=================*/
+
+/* Background */
+.lgb_ans,
+#b_results #lgb_info .lgb_btn:not(.lgb_webbtn) {
+	background-color: var(--depth2) !important;
+}
+
+/* Text Color */
+.e_red {
+	color: var(--red) !important;
+}
+
+#lgb_info .lgb_ttlfr {
+	color: var(--less-important-font-color) !important;
+}
+
+#lgb_info .eh_outer .eh_subtitle {
+	color: var(--accent2) !important;
 }
