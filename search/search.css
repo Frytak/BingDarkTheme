@@ -383,6 +383,43 @@ hr.df_fn {
 	border: none !important;
 }
 
+/*==================*/
+/* Number Converter */
+/*==================*/
+
+/* Background */
+.ml_root_body {
+	background-color: var(--depth2) !important;
+}
+
+.nc_root_option,
+.nc_root input[type='text'],
+.nc_root_inputSelect,
+.nc_root_outputSelect {
+	background-color: var(--depth3) !important;
+}
+
+/* Text Color */
+.ml_root_title,
+.nc_calculation_output,
+.nc_root_option,
+.nc_root input[type='text'],
+.nc_root_inputSelect,
+.nc_root_outputSelect {
+	color: var(--font-color) !important;
+}
+
+.nc_calculation_input {
+	color: var(--less-important-font-color) !important;
+}
+
+/* Border */
+.ctxt,
+select,
+input[type='text'] {
+	border-color: var(--depth4) !important;
+}
+
 /*================*/
 /* Search Results */
 /*================*/
@@ -394,7 +431,19 @@ hr.df_fn {
 
 #b_results .b_algo .b_deeplinks_block_container .b_vlist2col.b_deep ul li:hover,
 .rc_vlHorizontalImage .rc_vlCard {
-	background: var(--depth2) !important;
+	background-color: var(--depth2) !important;
+}
+
+.cCodeBg {
+	background-color: var(--depth3) !important;
+}
+
+.b_go_big .scs_child_rpr:before {
+	background-color: var(--depth4) !important;
+}
+
+.b_snippetGobig {
+	background: linear-gradient(var(--depth2), var(--depth2)) !important;
 }
 
 .sto_ctr .sto_slides .sto_slide.sto_slide_withAttrGrid .sto_nobleed .sto_attr_cntr {
@@ -406,7 +455,9 @@ hr.df_fn {
 }
 
 /* Text Color */
-.b_imgcap_altitle p strong {
+.b_imgcap_altitle p strong,
+.cCodeBg,
+#sp_requery {
 	color: var(--font-color) !important;
 }
 
@@ -417,7 +468,10 @@ hr.df_fn {
 .b_algo .b_factrow,
 .recommendationsTableTitle h2,
 .b_imgcap_altitle .b_factrow strong,
-#b_results .b_algo .b_vlist2col.b_deep {
+#b_results .b_algo .b_vlist2col.b_deep,
+.b_rcSnippetGoBig,
+#b_results > .b_ad,
+#sp_recourse {
 	color: var(--less-important-font-color) !important;
 }
 
@@ -793,6 +847,62 @@ a.rel_ent {
 	color: var(--less-important-font-color) !important;
 }
 
+/*======*/
+/* Jobs */
+/*======*/
+
+/* Background */
+.b_scard,
+.jb_tfil-container .b_slideexp .slide .fltr.active {
+	background-color: var(--depth3) !important;
+}
+
+.jb_tfil-container .b_slideexp .slide .fltr {
+	background-color: var(--transparent) !important;
+}
+
+#jb_gbContainer .jb_body.jb_gbmedium .jb_gradient {
+	background: none !important;
+}
+
+/* Text Color */
+.jb_jobcard .jb_jobcard__title,
+.jb_jobcard .jb_jobcard__coinfo {
+	color: var(--font-color) !important;
+}
+
+.jb_jobcard .jb_jobcard__meta {
+	color: var(--less-important-font-color) !important;
+}
+
+/* Border */
+.jb_tfil-container .b_slideexp .slide .fltr {
+	border-color: var(--depth4) !important;
+}
+
+/*==============*/
+/* From Website */
+/*==============*/
+/* Background */
+#b_results .b_algo.b_algoBigWiki.b_algoBorder {
+	background-image: none !important;
+	background-color: var(--depth2) !important;
+}
+
+/* Text Color */
+.b_algoArticleTextCarousel .b_slidebar .slide .b_title {
+	color: var(--font-color) !important;
+}
+
+.b_algoArticleTextCarousel .b_slidebar .slide .b_text {
+	color: var(--less-important-font-color) !important;
+}
+
+/* Border */
+.b_algoArticleTextCarousel .b_slidebar .slide .b_text {
+	border-color: var(--depth4) !important;
+}
+
 /*========*/
 /* Videos */
 /*========*/
@@ -983,8 +1093,13 @@ a.rel_ent {
 /* Text Color */
 
 .b_wpt_bg.b_wpt_bg_sc_high .sydwrap_wrapper #syd_suggestion_wrapper div#syd_qna_suggestion .syd_qna_suggestion_item,
-.sydwrap_wrapper .b_syd_input_container .b_syd_textarea_container #b_syd_sm_tb {
+.sydwrap_wrapper .b_syd_input_container .b_syd_textarea_container #b_syd_sm_tb,
+.sa_products .pcc-ttl {
 	color: var(--font-color) !important;
+}
+
+#ProductAds .br-productGrid .br-gridInterCard .sa_seller {
+	color: var(--less-important-font-color) !important;
 }
 
 /* Border */
@@ -1005,10 +1120,17 @@ a.rel_ent {
 /*=======================*/
 
 /* Background */
+.scs_faAc .scs_faAcCon div.scs_rdLnk::before {
+	background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, var(--depth2) 24px, var(--depth2) 100%) !important;
+}
+
 .l_ecrd_bkg_hlt,
 .lite-entcard-exp,
 #b_context .b_entityTP,
-.data_group {
+.data_group,
+#b_super_task_pane .scs_c .scs_theme,
+.scs_faAc .scs_faAcCon div.scs_rdLnk,
+.lite-entcard-main {
 	background: none !important;
 	background-color: var(--depth2) !important;
 }
@@ -1025,7 +1147,8 @@ a.rel_ent {
 	background-color: var(--depth4) !important;
 }
 
-li.b_ans {
+li.b_ans,
+.b_icbtns .ibs_btn {
 	background-color: var(--transparent) !important;
 }
 
@@ -1036,7 +1159,15 @@ li.b_ans {
 .lite-entcard-exp > h2,
 #b_context .b_entityTitle,
 .b_subModule h2,
-.b_eImgSetTitle {
+.b_eImgSetTitle,
+#b_super_task_pane .scs_c .scs_faTi h2,
+#b_super_task_pane .scs_c .scs_ssTi h2,
+#b_super_task_pane .scs_c .scs_child .scs_ti h2,
+.scs_c .scs_r_ctn .slide .b_title strong,
+#b_super_task_pane .scs_c .scs_gec > .b_module_expansion .b_expansion_text,
+.scs_c .scs_r_ctn .slide .b_title,
+.scs_factAc .b_module_expansion_control:not(.scs_falm) .b_module_expansion::before,
+.l_ecrd_txt_heroxs {
 	color: var(--font-color) !important;
 }
 
@@ -1050,7 +1181,11 @@ li.b_ans {
 #b_context .b_factrow,
 .b_footnote,
 #b_context .b_footnote,
-.b_eImgSetItem .b_eImgSetData > div:not(:first-child) {
+.b_eImgSetItem .b_eImgSetData > div:not(:first-child),
+#b_super_task_pane .scs_faAc .b_module_expansion .b_expansion_text,
+.scs_faAc .scs_faAcCon .rwrl_small,
+.scs_c .scs_r_ctn .slide .b_text,
+.scs_ss .scs_ssBd {
 	color: var(--less-important-font-color) !important;
 }
 
@@ -1077,7 +1212,12 @@ a.l_ecrd_thmtxt,
 .spl_ugcpoll_cndt > div,
 #b_context .b_module_expansion .b_expansion_wrapper,
 .b_subModule,
-.data_group {
+.data_group,
+#b_super_task_pane .scs_c .scs_child.scs_optional + .scs_child,
+#b_super_task_pane .scs_c .scs_child:not(.scs_optional),
+#b_super_task_pane .scs_faAc .b_module_expansion_control:not(:last-child),
+.l_ecrd_webicons_with_title,
+.l_ecrd_webicons_with_title_Single {
 	border-color: var(--depth4) !important;
 }
 
@@ -1132,4 +1272,37 @@ a.l_ecrd_thmtxt,
 
 #lgb_info .eh_outer .eh_subtitle {
 	color: var(--accent2) !important;
+}
+
+/*============*/
+/* Calculator */
+/*============*/
+
+/* Background */
+.rcABP,
+.rcOptB,
+.rcOpdB {
+	background-color: var(--depth2) !important;
+}
+
+/* Text Color */
+.rcABP,
+.rcOpdB {
+	color: var(--font-color) !important;
+}
+
+.rcOptB {
+	color: var(--less-important-font-color) !important;
+}
+
+/* Border */
+.rcABP {
+	border-left-color: var(--depth4) !important;
+	border-right-color: var(--depth4) !important;
+	border-bottom-color: var(--depth4) !important;
+}
+
+.rcOptB,
+.rcOpdB {
+	border-color: var(--depth4) !important;
 }
