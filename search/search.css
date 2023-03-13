@@ -420,91 +420,6 @@ input[type='text'] {
 	border-color: var(--depth4) !important;
 }
 
-/*================*/
-/* Search Results */
-/*================*/
-
-/* Background */
-#b_results > li:not(.b_vidAns) {
-	background-color: var(--transparent) !important;
-}
-
-#b_results .b_algo .b_deeplinks_block_container .b_vlist2col.b_deep ul li:hover,
-.rc_vlHorizontalImage .rc_vlCard {
-	background-color: var(--depth2) !important;
-}
-
-.cCodeBg {
-	background-color: var(--depth3) !important;
-}
-
-.b_go_big .scs_child_rpr:before {
-	background-color: var(--depth4) !important;
-}
-
-.b_snippetGobig {
-	background: linear-gradient(var(--depth2), var(--depth2)) !important;
-}
-
-.sto_ctr .sto_slides .sto_slide.sto_slide_withAttrGrid .sto_nobleed .sto_attr_cntr {
-	background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, var(--depth2) 100%) !important;
-}
-
-.scs_arw {
-	filter: contrast(100%) invert(80%) !important;
-}
-
-/* Text Color */
-.b_imgcap_altitle p strong,
-.cCodeBg,
-#sp_requery {
-	color: var(--font-color) !important;
-}
-
-#b_results > li .b_wikiRichcard_noHeroSection .b_wikiRichcard p,
-.b_caption,
-.b_caption .b_factrow strong,
-.b_caption p strong,
-.b_algo .b_factrow,
-.recommendationsTableTitle h2,
-.b_imgcap_altitle .b_factrow strong,
-#b_results .b_algo .b_vlist2col.b_deep,
-.b_rcSnippetGoBig,
-#b_results > .b_ad,
-#sp_recourse {
-	color: var(--less-important-font-color) !important;
-}
-
-.sp_pssl {
-	color: var(--accent2) !important;
-}
-
-/* Border */
-.b_overlay .btn.rounded .cr > div {
-	border-color: var(--depth4) !important;
-}
-
-/*--------*/
-/* Arrows */
-/*--------*/
-
-/* TODO: Fix arrows */
-
-/*--------*/
-/* Tables */
-/*--------*/
-
-/* Text Color */
-.b_vList .tabcap td,
-.b_vList .tabcap table tr th {
-	color: var(--less-important-font-color) !important;
-}
-
-/* Border */
-.b_vList .tabcap table tr {
-	border-color: var(--depth4) !important;
-}
-
 /*=========================*/
 /* Search Results from ... */
 /*=========================*/
@@ -880,6 +795,29 @@ a.rel_ent {
 	border-color: var(--depth4) !important;
 }
 
+/*====*/
+/* Ad */
+/*====*/
+/* Background */
+.sb_adTA .b_adSlug,
+.b_algoSlug .algoSlug_icon {
+	padding: 0.2em 0.4em 0.2em 0.4em !important;
+	background-color: var(--depth3) !important;
+}
+
+/* Text Color */
+.sb_adTA .b_adSlug,
+.b_algoSlug .algoSlug_icon {
+	color: var(--less-important-font-color) !important;
+}
+
+/* Border */
+div#b_content ol#b_results li.b_ad.b_adMiddle,
+.sb_adTA .b_adSlug,
+.b_algoSlug .algoSlug_icon {
+	border-color: var(--depth4) !important;
+}
+
 /*==============*/
 /* From Website */
 /*==============*/
@@ -899,7 +837,8 @@ a.rel_ent {
 }
 
 /* Border */
-.b_algoArticleTextCarousel .b_slidebar .slide .b_text {
+.b_algoArticleTextCarousel .b_slidebar .slide .b_text,
+.b_rc_gb_sub .b_rc_gb_sub_title {
 	border-color: var(--depth4) !important;
 }
 
@@ -1147,7 +1086,7 @@ a.rel_ent {
 	background-color: var(--depth4) !important;
 }
 
-li.b_ans,
+li.b_ans:not(.b_mop),
 .b_icbtns .ibs_btn {
 	background-color: var(--transparent) !important;
 }
@@ -1304,5 +1243,97 @@ a.l_ecrd_thmtxt,
 
 .rcOptB,
 .rcOpdB {
+	border-color: var(--depth4) !important;
+}
+
+/*================*/
+/* Search Results */
+/*================*/
+
+/* Background */
+#b_results > li:not(.b_vidAns, .b_mop) {
+	background-color: var(--transparent) !important;
+}
+
+#b_results .b_algo .b_deeplinks_block_container .b_vlist2col.b_deep ul li:hover,
+.rc_vlHorizontalImage .rc_vlCard,
+.b_ans,
+.b_mop {
+	background-color: var(--depth2) !important;
+}
+
+.cCodeBg {
+	background-color: var(--depth3) !important;
+}
+
+.b_go_big .scs_child_rpr:before {
+	background-color: var(--depth4) !important;
+}
+
+.b_snippetGobig {
+	background: linear-gradient(var(--depth2), var(--depth2)) !important;
+}
+
+.sto_ctr .sto_slides .sto_slide.sto_slide_withAttrGrid .sto_nobleed .sto_attr_cntr {
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, var(--depth2) 100%) !important;
+}
+
+.scs_arw {
+	filter: contrast(100%) invert(80%) !important;
+}
+
+/* Text Color */
+.b_imgcap_altitle p strong,
+.cCodeBg,
+#sp_requery {
+	color: var(--font-color) !important;
+}
+
+#b_results > li .b_wikiRichcard_noHeroSection .b_wikiRichcard p,
+.b_caption,
+.b_caption .b_factrow strong,
+.b_caption p strong,
+.b_algo .b_factrow,
+.recommendationsTableTitle h2,
+.b_imgcap_altitle .b_factrow strong,
+#b_results .b_algo .b_vlist2col.b_deep,
+.b_rcSnippetGoBig,
+#b_results > .b_ad,
+#sp_recourse {
+	color: var(--less-important-font-color) !important;
+}
+
+.sp_pssl {
+	color: var(--accent2) !important;
+}
+
+/* Border */
+.b_overlay .btn.rounded .cr > div {
+	border-color: var(--depth4) !important;
+}
+
+.b_ans,
+.b_mop {
+	border-radius: 6px !important;
+}
+
+/*--------*/
+/* Arrows */
+/*--------*/
+
+/* TODO: Fix arrows */
+
+/*--------*/
+/* Tables */
+/*--------*/
+
+/* Text Color */
+.b_vList .tabcap td,
+.b_vList .tabcap table tr th {
+	color: var(--less-important-font-color) !important;
+}
+
+/* Border */
+.b_vList .tabcap table tr {
 	border-color: var(--depth4) !important;
 }
